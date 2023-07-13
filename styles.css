@@ -1,0 +1,261 @@
+/* @font-face {
+    font-family: 'hermy' ;
+    src: url('font/Moon2.0-Bold.otf');
+} */
+
+*{
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* card section */
+
+
+body{
+    background-color: #d8f7f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: inter , sans-serif;
+    font-weight: 700;
+}
+
+img{
+    width: 100%;
+}
+
+
+.card{
+
+    width: 300px;
+    height: 550px;
+    background-color: #fcfcfc;
+    border-radius: 15px;
+    position: relative;
+
+
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.4rem;
+  }
+  
+  .label {
+    font-size: .625rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: +1.3px;
+  }
+  
+  .searchBar {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #searchQueryInput {
+    height: 2rem;
+    background: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1rem;
+  }
+
+  #searchQueryInput::placeholder{
+
+    color: #dddddd;
+  }
+  
+  #searchQuerySubmit {
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  #searchQuerySubmit:hover {
+    cursor: pointer;
+  }
+
+
+.location h1{
+    font-size: 26px;
+    text-align: center;
+    color: #474747;
+    margin-top: 1.4rem;
+
+}
+
+
+.location .date{
+
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: #949494;
+}
+
+.card .weather-img{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+.card .weather-img img{
+    width: 50%;
+}
+
+
+.temps{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.temps h1{
+    color: #3b3b3b;
+
+}
+
+.temps h5{
+
+    color: #3b3b3b;
+}
+.temps .low-temp {
+  text-align: center;
+}
+.temps .low-temp img{
+  width: 25px;
+  opacity: 0.3;
+}
+
+.temps .low-temp h5{
+  font-size: 14px;
+}
+
+
+.details{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.details .labels{
+
+  border-radius: 14px;
+  padding: 5px;
+  width: 60px;
+}
+
+.details .label-low{
+
+  background-color: hsl(199,100%,96%);
+}
+
+.details .label-moderate{
+
+  background-color: hsl(0, 0%, 90%);
+}
+
+.details .label-high{
+
+  background-color: hsl(51,80%,90%);
+}
+
+
+
+.details .d-flex{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.details .labels span{
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.details .labels span#low{
+
+  color: hsl(198, 100%, 62%);
+}
+
+.details .labels span#moderate{
+
+  color: hsl(0, 0%, 69%);
+}
+
+.details .labels span#high{
+
+  color: hsl(51, 100%, 63%);
+}
+
+.details .details-p{
+
+  font-size: 13px;
+  font-weight: 500;
+  color: #535353;
+}
+
+
+/* the weekly temps section */
+
+.weekly-temps{
+  margin-top:2.4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.weekly-temps .daily{
+    
+  text-align: center;
+  background-color: #fff;
+  border-radius: 13px;
+  width: 70px;
+  height: 75px;
+  padding: 7px;
+  border: #9494942a solid 1px;
+
+}
+
+.weekly-temps .daily img{
+  top: -10px;
+  width: 50px;
+  margin-top: -30px;
+}
+
+.weekly-temps .daily p{
+
+  font-size: 13px;
+  font-weight: 500;
+  color: #535353;
+}
+
+.weekly-temps .daily .temp{
+
+  font-size: 18px;
+  margin-top: 8px;
+}
